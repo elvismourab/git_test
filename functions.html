@@ -5,23 +5,29 @@
     </head>
     <body>
         <script>
+            /* This function take one number and returns that number +7 */
             function add7(x) {
                 return x + 7;
             }
 
+            /* This function takes 2 numbers and return their product */
             function multiply(x, y) {
                 return x * y;
             }
 
+            /* This function takes a string and returns that string with only the first letter capitalized */
             function capitalize(x) {
                 let y = x.charAt(0).toUpperCase() + x.slice(1);
                 return y;
             }
 
+            /* This function takes a string and returns the very last letter of that string */
             function lastLetter(x) {
                 return x.slice(-1);
             }
 
+            /* tests */
+            console.log(add7(3));
             console.log(multiply(7, 5));
 
             console.log(capitalize("viva las vegas"));
