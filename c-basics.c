@@ -8,7 +8,7 @@ header file - string.h = necessary to manipulate strings
 #include <stdio.h>
 #include <string.h>
 
-int printmsg(char a[])
+int printMessage(char a[])
 {
     size_t len = strlen(a);
     if (len > 0)
@@ -29,7 +29,7 @@ int main()
     - Parameters are optional.
     - Functions are declared before main func.
      */
-    printmsg(a);
+    printMessage(a);
 
     return 0;
 }
