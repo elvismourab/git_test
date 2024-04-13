@@ -1,0 +1,61 @@
+<!-- https://www.theodinproject.com/lessons/foundations-object-basics -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>js-array-methods</title>
+</head>
+
+<body>
+    <script>
+        const arr = [1, 2, 3, 4, 5];
+
+        function sumOfTripledEvens(array) {
+            let sum = 0;
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] % 2 === 0) {
+                    const tripleEvenNumber = array[i] * 3;
+                    sum += tripleEvenNumber;
+                }
+            }
+            return sum;
+        }
+
+        console.log(sumOfTripledEvens(arr));
+
+        //
+        function sum3Evens(num) {
+            let sum = 0;
+            if (num % 2 === 0) {
+                sum += num * 3;
+            }
+            return sum;
+        }
+
+        //map method
+        const mapArr = arr.map(sum3Evens);
+        console.log(mapArr);
+
+        //filter method
+        const filterArr = mapArr.filter((num) => num !== 0);
+        console.log(filterArr);
+
+        //reduce method
+        const reduceArr = filterArr.reduce((total, currentItem) => {
+            return total + currentItem;
+        });
+        console.log(reduceArr);
+
+        //The Odin Project solution
+/*         function sumOfTripledEvens(array) {
+            return array
+                .filter((num) => num % 2 === 0)
+                .map((num) => num * 3)
+                .reduce((acc, curr) => acc + curr);
+        }
+        console.log(sumOfTripledEvens(arr)); */
+    </script>
+</body>
+
+</html>
