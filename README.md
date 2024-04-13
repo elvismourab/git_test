@@ -1,3 +1,4 @@
 # git_test
 
-Hello Odin!
+<!-- Hello Odin! -->
+A collection of basics for studying purposes.
