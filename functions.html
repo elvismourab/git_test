@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset ="UTF-8">
-    </head>
-    <body>
-        <script>
-            /* This function take one number and returns that number +7 */
-            function add7(x) {
-                return x + 7;
-            }
 
-            /* This function takes 2 numbers and return their product */
-            function multiply(x, y) {
-                return x * y;
-            }
+<head>
+    <meta charset="UTF-8">
+    <title>functions</title>
+</head>
 
-            /* This function takes a string and returns that string with only the first letter capitalized */
-            function capitalize(x) {
-                let y = x.charAt(0).toUpperCase() + x.slice(1);
-                return y;
-            }
+<body>
+    <script>
+        /* This function take one number and returns that number +7 */
+        function add7(x) {
+            return x + 7;
+        }
 
-            /* This function takes a string and returns the very last letter of that string */
-            function lastLetter(x) {
-                return x.slice(-1);
-            }
+        /* This function takes 2 numbers and return their product */
+        function multiply(x, y) {
+            return x * y;
+        }
 
-            /* tests */
-            console.log(add7(3));
-            console.log(multiply(7, 5));
+        /* This function takes a string and returns that string with only the first letter capitalized */
+        function capitalize(x) {
+            let y = x.charAt(0).toUpperCase() + x.slice(1);
+            return y;
+        }
 
-            console.log(capitalize("viva las vegas"));
-            console.log(capitalize("burning LOVE"));
-            console.log(capitalize("FeVeR"));
+        /* This function takes a string and returns the very last letter of that string */
+        function lastLetter(x) {
+            return x.slice(-1);
+        }
 
-            console.log(lastLetter("Trouble"));
-            console.log(lastLetter("hound DOG"));
+        /* tests */
+        console.log(add7(3));
+        console.log(multiply(7, 5));
 
-        </script>
-    </body>
+        console.log(capitalize("viva las vegas"));
+        console.log(capitalize("burning LOVE"));
+        console.log(capitalize("FeVeR"));
+
+        console.log(lastLetter("Trouble"));
+        console.log(lastLetter("hound DOG"));
+
+    </script>
+</body>
+
 </html>
