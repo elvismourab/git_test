@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Map to names</title>
+</head>
+
+<body>
+    <script>
+        let john = { name: "John", age: 25 };
+        let pete = { name: "Pete", age: 30 };
+        let mary = { name: "Mary", age: 28 };
+
+        let users = [john, pete, mary];
+
+        // This method will loop through each item of the 'users' array, take the item.name property and copy it to the names array.
+        let names = users.map(item => item.name);
+        console.log(typeof names);
+
+        alert(names); // John, Pete, Mary
+    </script>
+</body>
+
+</html>

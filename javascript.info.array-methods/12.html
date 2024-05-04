@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filter unique array members</title>
+</head>
+
+<body>
+    <script>
+        // This function returns the unique items of 'arr' in a new array - It first creates 'x' as an empty array, then checks 'forEach' 'arr' element if 'x' contains the element, if not - adds the element to the end of 'x' array using push() method.
+        function unique(arr) {
+            let x = [];
+            arr.forEach(element => {
+                if (!(x.includes(element))) {
+                    x.push(element);
+                }
+            });
+            return x;
+        }
+
+        let strings = ["Hare", "Krishna", "Hare", "Krishna",
+            "Krishna", "Krishna", "Hare", "Hare", ":-O"
+        ];
+
+        alert(unique(strings)); // Hare, Krishna, :-O
+    </script>
+</body>
+
+</html>

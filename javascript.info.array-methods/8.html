@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Map to objects</title>
+</head>
+
+<body>
+    <script>
+        let john = { name: "John", surname: "Smith", id: 1 };
+        let pete = { name: "Pete", surname: "Hunt", id: 2 };
+        let mary = { name: "Mary", surname: "Key", id: 3 };
+
+        let users = [john, pete, mary];
+
+        // This functions uses map() to iterate through 'users' array and assign the fullName with concat() method and the id accessing the users id value. Using only the brackets in the arrow function will cause an error because it will see the brackets as the function body and not the object - to circumvent this you need to add another parenthesis around the object brackets. 
+        // let usersMapped = users.map(item => ({
+        //     fullName: item.name.concat(' ' + item.surname),
+        //     id: item.id
+        // }));
+
+        // Using this function, it's not necessary to put parenthesis around the body (in this case, the arrow function body), but you need to create an object 'obj' inside the iteration and return it to work as expected.
+        let usersMapped = users.map(item => {
+            const obj = {};
+            obj.fullName = item.name.concat(' ' + item.surname);
+            obj.id = item.id;
+
+            return obj;
+        })
+
+        /*
+        usersMapped = [
+          { fullName: "John Smith", id: 1 },
+          { fullName: "Pete Hunt", id: 2 },
+          { fullName: "Mary Key", id: 3 }
+        ]
+        */
+
+        alert(usersMapped[0].id) // 1
+        alert(usersMapped[0].fullName) // John Smith
+    </script>
+</body>
+
+</html>

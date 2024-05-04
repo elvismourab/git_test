@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Get average age</title>
+</head>
+
+<body>
+    <script>
+        // This function uses the reduce() method to iterate through 'arr' and calculate the average age. The 'total' value is initiated with '0' and is increase with the sum of every 'item.age' in the loop. After that, the total value is divided by arr.length (which gives the quantity of values iterated through), resulting in the average age.
+        function getAverageAge(arr) {
+            return arr.reduce((total, item) => total + item.age, 0) / arr.length;
+        }
+
+        let john = { name: "John", age: 25 };
+        let pete = { name: "Pete", age: 30 };
+        let mary = { name: "Mary", age: 29 };
+
+        let arr = [john, pete, mary];
+
+        alert(getAverageAge(arr)); // (25 + 30 + 29) / 3 = 28
+    </script>
+</body>
+
+</html>

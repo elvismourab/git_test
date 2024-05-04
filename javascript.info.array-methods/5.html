@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Copy and sort array</title>
+</head>
+
+<body>
+    <script>
+        // This function copies the arr using slice() method without arguments, then sorts the copy with the sort() method without a callback fn - this way it will automatically sort by the strings.
+        function copySorted(arr) {
+            return arr.slice().sort();
+        }
+
+        let arr = ["HTML", "JavaScript", "CSS"];
+
+        let sorted = copySorted(arr);
+
+        alert(sorted); // CSS, HTML, JavaScript
+        alert(arr); // HTML, JavaScript, CSS (no changes)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Translate border-left-width to borderLeftWidth</title>
+</head>
+
+<body>
+    <script>
+        function camelize(str) {
+            // Transform the string into array removing the dash;
+            const arr = str.split('-');
+            // Map through the array, if the index is 0 (the fist item), it goes directly to the new array, else: charAt(0) the first char is set to UpperCase using toUpperCase() method, then the rest of the string is placed right after the first letter using the slice() method.
+            // After that, the method join() turns the array into a string;
+            str = arr.map(item => arr.indexOf(item) == 0 ? item : item.charAt(0).toUpperCase() + item.slice(1)).join('');
+            return str;
+        }
+
+        camelize("background-color");
+        camelize("list-style-image");
+        camelize("-webkit-transition");
+    </script>
+</body>
+
+</html>

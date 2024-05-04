@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filter range "in place"</title>
+</head>
+
+<body>
+    <script>
+        // This function receives the array and a - b values for the range, it iterates through the array and checks if the current item is bigger or equal to a AND if the current item is lower or equal to b - using NOT operator: in this case, when the result is false the splice() method will remove the item from the array and shift the others, after that the i counter is decreased so that the next value can be tested.
+        // This function does not return anything and manipulates de array (arr) inside the filterRangeInPlace function.
+        function filterRangeInPlace(arr, a, b) {
+            for (let i = 0; i < arr.length; i++) {
+                if (!(a <= arr[i] && arr[i] <= b)) {
+                    arr.splice(i, 1);
+                    i--;
+                }
+            }
+        }
+
+        let arr = [5, 3, 8, 1];
+
+        filterRangeInPlace(arr, 1, 4); // removed the numbers except from 1 to 4
+
+        alert(arr); // [3, 1]
+    </script>
+</body>
+
+</html>

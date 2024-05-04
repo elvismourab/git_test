@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sort in decreasing order</title>
+</head>
+
+<body>
+    <script>
+        let arr = [5, 2, 1, -10, 8];
+
+        // ... your code to sort it in decreasing order
+        // The sort() method receives 'a' and 'b' as arguments and compare them, if 'a' is bigger than 'b', 'a' goes up in the array, otherwise 'a' is pushed down, until all values are compared.
+        arr.sort((a, b) => a > b ? -1 : 1);
+
+        alert(arr); // 8, 5, 2, 1, -10
+    </script>
+</body>
+
+</html>
