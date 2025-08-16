@@ -1,6 +1,9 @@
+<?php
+
 namespace Colaborador\Entity;
 
-class Colaborador {
+class Colaborador
+{
     public $id;
     public $nomeCompleto;
     public $cargo;

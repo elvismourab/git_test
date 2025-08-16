@@ -1,9 +1,12 @@
+<?php
+
 namespace Colaborador\UseCase;
 
 use Colaborador\Entity\Colaborador;
 use Colaborador\Adapter\RepositoryInterface;
 
-interface UseCaseInterface {
+interface UseCaseInterface
+{
     public function __construct(RepositoryInterface $repository);
     public function search(string $query);
     public function findAll();
