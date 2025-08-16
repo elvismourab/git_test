@@ -26,3 +26,14 @@ DDD
 - Estruturação estratégica -> definição do context map
 - Tática -> pensar em implementações
 
+---
+
+Exemplo: clean-arch-test
+
+1. É criada a entidade, a camada mais alta da estrutur (src/Colaborador/Entity/Colaborador.php)
+2. Cria-se a interface dos useCases, que é responsável pelas operações realizadas (src/Colaborador/UseCase/UseCaseInterface.php)
+3. Cria o service que implementa a interface dos useCases.
+4. Criar o adaptador do banco de dados para a aplicação.
+5. Criar o controller que chama o service solicitado.
+
+* Aqui utilizamos o 5º princípio do SOLID, o DIP (Dependency Inversion Principle / Princípio da Inversão de Dependência) - Como não podemos saber nada das classes concretas que estão mais internas na arquitetura, nós injetamos uma abstração que serve como base para aquela classe concreta. Sempre dependa de abstrações, e não das estruturas concretas.
