@@ -1,6 +1,14 @@
-# Clean arquitecture
+# Clean Architecture
 
-## Explicação para Iniciantes
+## 🎯 Objetivo
+
+Este material de estudo explica o que é a Clean Architecture (Arquitetura Limpa), seus princípios fundamentais e como ela organiza o software em camadas para criar sistemas desacoplados, testáveis e fáceis de manter.
+
+## 📝 Resumo
+
+A Clean Architecture é uma abordagem de design de software que visa separar as preocupações, isolando as regras de negócio do sistema de detalhes de implementação como frameworks, bancos de dados e interfaces de usuário. A regra principal é que as dependências devem sempre apontar para o interior do sistema, garantindo que o núcleo da aplicação permaneça independente e testável.
+
+## 📚 Conteúdo
 
 ### O que é Clean Architecture (Arquitetura Limpa)?
 
@@ -9,8 +17,6 @@ Imagine que você está construindo uma casa. Você não começa pelas tomadas e
 O objetivo principal é criar um sistema organizado em camadas, onde o "coração" do software (as regras de negócio) não depende de detalhes externos como frameworks, bancos de dados ou interfaces de usuário.
 
 ### Os 5 Mandamentos da Clean Architecture
-
-O arquivo lista 5 pontos que são, na verdade, os **objetivos** dessa arquitetura:
 
 1.  **Independência de Framework:** Seu código principal não deve se importar se você usa Laravel, Spring, React, ou qualquer outro framework. O framework é uma ferramenta, não o centro do sistema.
 2.  **Independência de Interface de Usuário:** A lógica de negócio não deve mudar se o sistema for usado por um site, um aplicativo de celular ou um terminal de comando.
@@ -37,7 +43,7 @@ Pense em círculos, um dentro do outro. As coisas mais importantes ficam no cent
 
 **Mas NUNCA o contrário!** Uma `Entidade` (círculo mais interno) não pode saber quem é o `Controller` ou qual banco de dados está sendo usado (círculos mais externos).
 
-É aqui que entra o **Princípio da Inversão de Dependência (o 'D' do SOLID)**, mencionado no final do arquivo. Em vez da camada de `Use Cases` depender diretamente de um `DatabaseRepository` (concreto), ela depende de uma `RepositoryInterface` (uma abstração, um "contrato"). Isso permite que você troque a implementação do banco de dados sem quebrar a camada de `Use Cases`.
+É aqui que entra o **Princípio da Inversão de Dependência (o 'D' do SOLID)**. Em vez da camada de `Use Cases` depender diretamente de um `DatabaseRepository` (concreto), ela depende de uma `RepositoryInterface` (uma abstração, um "contrato"). Isso permite que você troque a implementação do banco de dados sem quebrar a camada de `Use Cases`.
 
 ### E o tal do DDD?
 

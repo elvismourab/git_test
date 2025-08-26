@@ -1,23 +1,20 @@
-## 📚 Material de Estudo: Dominando o Terminal
+# Dominando o Terminal
 
----
+## 🎯 Objetivo
 
-### **Sumário**
+Este material de estudo apresenta os conceitos essenciais para o uso da linha de comando, desde os comandos básicos de navegação e manipulação de arquivos até dicas para se tornar um desenvolvedor mais produtivo e "terminal-bound".
 
-1.  **O que é a Linha de Comando?**
-2.  **Comandos Essenciais do Terminal**
-3.  **Como se Tornar um Desenvolvedor "Terminal-Bound"**
-4.  **Recursos Adicionais para o Terminal**
+## 📝 Resumo
 
----
+A linha de comando é uma interface de texto para interagir com o computador. Dominá-la é fundamental para a produtividade do desenvolvedor. O processo envolve aprender comandos essenciais (`cd`, `ls`, `mkdir`, `rm`), avançar para shell scripting, usar editores de texto no terminal (Vim, Nano), personalizar o shell com aliases e explorar ferramentas avançadas como `tmux` e `curl`.
+
+## 📚 Conteúdo
 
 ### 1. O que é a Linha de Comando?
 
 A **linha de comando** é uma interface de texto que permite interagir com o computador digitando comandos, em vez de usar uma interface gráfica (GUI) como o mouse e o teclado. É usada para gerenciar arquivos, executar programas e automatizar tarefas.
 
 * **Como abrir:** No Linux, a combinação de teclas mais comum é **Ctrl + Alt + T**. Você também pode procurar pelo programa do terminal no menu de aplicativos.
-
----
 
 ### 2. Comandos Essenciais do Terminal
 
@@ -35,8 +32,6 @@ Aqui estão os comandos fundamentais para navegar e manipular arquivos e diretó
 * **`rm -r [nome_do_diretorio]`**: Remove um diretório e todo o seu conteúdo recursivamente.
 * **`mv [nome_antigo] [nome_novo]`**: Renomeia um arquivo ou diretório.
 
----
-
 ### 3. Como se Tornar um Desenvolvedor "Terminal-Bound"
 
 Dominar o terminal é um passo essencial para aumentar a produtividade. Para realmente "viver no terminal", siga estas etapas:
@@ -48,8 +43,6 @@ Dominar o terminal é um passo essencial para aumentar a produtividade. Para rea
 5.  **Domine o Git pela linha de comando:** Aprenda a gerenciar *branches*, fazer *commits* e resolver conflitos de fusão diretamente pelo terminal.
 6.  **Vá além do básico:** Explore ferramentas avançadas como **Docker**, **Kubernetes** e **SSH** para gerenciar ambientes de desenvolvimento e servidores.
 7.  **Pratique e integre:** Comece a substituir ferramentas de interface gráfica por suas alternativas na linha de comando sempre que possível.
-
----
 
 ### 4. Recursos Adicionais para o Terminal
 
