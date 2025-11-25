@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de Array: map, filter e reduce</title>
+</head>
+
+<body>
+    <script>
+        /*
+        =================================================================
+        PROBLEMA: SOMAR O TRIPLO DOS NÚMEROS ÍMPARES DE UM ARRAY
+        =================================================================
+        
+        O objetivo é criar uma função que:
+        1. Receba um array de números.
+        2. Encontre todos os números ÍMPARES.
+        3. Multiplique cada número ÍMPAR por 3.
+        4. Some todos os resultados.
+        
+        Exemplo para o array [1, 2, 3, 4, 5]:
+        - Ímpares: [1, 3, 5]
+        - Triplicados: [3, 9, 15]
+        - Soma final: 27
+        */
+
+        const arrayDeTeste = [1, 2, 3, 4, 5];
+        console.log("Array de teste:", arrayDeTeste, "\n");
+
+        // =================================================================
+        // SOLUÇÃO IDEAL: ENCADEAMENTO DE MÉTODOS (PROGRAMAÇÃO FUNCIONAL)
+        // =================================================================
+        /*
+        A forma mais limpa, legível e eficiente de resolver este problema é encadeando os métodos.
+        Cada método faz uma única coisa e passa o resultado para o próximo.
+        */
+        function somaDoTriploDeImpares_SolucaoIdeal(array) {
+            return array
+                .filter(num => num % 2 !== 0) // 1. Filtra e mantém apenas os ímpares: [1, 3, 5]
+                .map(num => num * 3) // 2. Transforma (mapeia) cada ímpar, triplicando seu valor: [3, 9, 15]
+                .reduce((soma, num) => soma + num, 0); // 3. Reduz o array a um único valor, somando tudo: 3 + 9 + 15 = 27
+        }
+
+        console.log("--- Solução Ideal (Encadeada) ---");
+        const resultadoFinal = somaDoTriploDeImpares_SolucaoIdeal(arrayDeTeste);
+        console.log("Resultado:", resultadoFinal, "\n");
+
+
+        // =================================================================
+        // EXPLICAÇÃO DETALHADA DE CADA MÉTODO
+        // =================================================================
+        console.log("--- Explicações e Demonstrações Individuais ---");
+
+        /*
+        ----------------------------------------------------
+        1. Usando .filter() - A Peneira
+        ----------------------------------------------------
+        - O QUE FAZ: Cria um **novo array** contendo apenas os elementos que passam em uma condição (retornam `true`).
+        - ANALOGIA: É como uma peneira. Você passa o array original por ela, e só os itens que você quer ficam.
+        - QUANDO USAR: Para selecionar um subconjunto de elementos de um array.
+        */
+        function demonstracaoComFilter(array) {
+            console.log("\n--- 1. Usando .filter() ---");
+            let soma = 0;
+
+            // Passo 1: Use 'filter' para pegar APENAS os números ímpares.
+            const numerosImpares = array.filter(item => item % 2 !== 0);
+            console.log("Array original:", array);
+            console.log("Resultado do .filter(item => item % 2 !== 0):", numerosImpares);
+
+            // Passo 2: Agora que temos só os ímpares, podemos triplicar e somar com um loop simples.
+            for (const item of numerosImpares) {
+                soma += (item * 3);
+            }
+            console.log("Soma final (calculada após o filtro):", soma);
+            return soma;
+        }
+
+        /*
+        ----------------------------------------------------
+        2. Usando .map() - A Linha de Montagem
+        ----------------------------------------------------
+        - O QUE FAZ: Cria um **novo array** com o **mesmo tamanho** do original, onde cada elemento é o resultado da função que você passou.
+        - ANALOGIA: É como uma linha de montagem. Cada item do array original passa por ela e sai transformado do outro lado. Nenhum item é descartado.
+        - QUANDO USAR: Para transformar cada elemento de um array em outra coisa.
+        
+        NOTA: O 'map' sozinho não consegue resolver o problema, pois ele não filtra. A melhor forma de usá-lo é após um filtro.
+        */
+        function demonstracaoComMap(array) {
+            console.log("\n--- 2. Usando .map() ---");
+
+            // Passo 1: Primeiro, precisamos filtrar. Usar map para filtrar é um anti-padrão!
+            const numerosImpares = array.filter(item => item % 2 !== 0);
+            console.log("Array original:", array);
+            console.log("Ímpares (obtidos com .filter antes do .map):", numerosImpares);
+
+            // Passo 2: Agora sim, com o array filtrado, usamos 'map' para transformar cada ímpar no seu triplo.
+            const imparesTriplicados = numerosImpares.map(item => item * 3);
+            console.log("Resultado do .map(item => item * 3):", imparesTriplicados);
+
+            // Passo 3: Por fim, usamos 'reduce' para somar os valores transformados.
+            const soma = imparesTriplicados.reduce((acumulador, valor) => acumulador + valor, 0);
+            console.log("Soma final (calculada com .reduce após o .map):", soma);
+            return soma;
+        }
+
+
+        /*
+        ----------------------------------------------------
+        3. Usando .reduce() - O Consolidador
+        ----------------------------------------------------
+        - O QUE FAZ: "Reduz" um array a um **único valor** (seja um número, uma string, um objeto, etc.), executando uma função para cada elemento.
+        - ANALOGIA: É como um funil que processa todos os itens para gerar um resultado final consolidado.
+        - QUANDO USAR: Para calcular um valor total a partir de um array (somas, médias, concatenação, etc.).
+        
+        NOTA: O 'reduce' é tão poderoso que pode fazer o trabalho de filtrar, mapear e somar tudo de uma vez.
+        */
+        function demonstracaoComReduce(array) {
+            console.log("\n--- 3. Usando .reduce() ---");
+            console.log("Array original:", array);
+
+            // 'somaParcial' é o acumulador (começa com 0, o segundo argumento do reduce).
+            // 'item' é o elemento atual do array em cada iteração.
+            const somaFinal = array.reduce((somaParcial, item) => {
+                // Condição de filtro: só fazemos algo se o item for ímpar.
+                if (item % 2 !== 0) {
+                    // Lógica de transformação e soma: adiciona o triplo do item ao acumulador.
+                    return somaParcial + (item * 3);
+                } else {
+                    // Se não for ímpar, apenas retornamos o acumulador sem modificá-lo.
+                    // É CRUCIAL sempre retornar o acumulador para a próxima iteração.
+                    return somaParcial;
+                }
+            }, 0); // O '0' é o valor inicial do acumulador 'somaParcial'.
+
+            console.log("Soma final (calculada em uma única passada com .reduce):", somaFinal);
+            return somaFinal;
+        }
+
+
+        // --- Chamando as funções de demonstração ---
+        demonstracaoComFilter(arrayDeTeste);
+        demonstracaoComMap(arrayDeTeste);
+        demonstracaoComReduce(arrayDeTeste);
+    </script>
+</body>
+
+</html>

@@ -17,6 +17,7 @@ Bem-vindo ao meu repositório de estudos! Este espaço é um compilado de anota�
 *   [Fundamentos de HTML](./material-de-estudo/fundamentos-html.md)
 *   [Como a Web Funciona](./material-de-estudo/como-a-web-funciona.md)
 *   [Fundamentos do React](./material-de-estudo/fundamentos-do-react.md)
+*   [Métodos de Array: map, filter e reduce](./material-de-estudo/array-methods.html)
 
 ### 🛠️ Ferramentas e Boas Práticas
 
