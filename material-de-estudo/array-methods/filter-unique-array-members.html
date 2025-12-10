@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Filter unique array elements</title>
+</head>
+
+<body>
+    <script>
+        function unique(arr) {
+            let result = [];
+            arr.forEach(element => {
+                if (!(result.includes(element))) {
+                    result.push(element);
+                }
+            });
+            return result;
+        }
+
+        let strings = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O"];
+        alert(unique(strings)); // Hare, Krishna, :-O
+    </script>
+</body>
+
+</html>

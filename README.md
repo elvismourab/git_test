@@ -8,7 +8,7 @@
 
 *   [Como a Web Funciona](./material-de-estudo/como-a-web-funciona.md)
 *   [Fundamentos de HTML](./material-de-estudo/fundamentos-html.md)
-*   [Métodos de Array: map, filter e reduce](./material-de-estudo/array-methods.html)
+*   [Métodos de Array: map, filter e reduce](./material-de-estudo/array-methods/)
 *   [Fundamentos do React](./material-de-estudo/fundamentos-do-react.md)
 
 ### 🛠️ Ferramentas e Boas Práticas
