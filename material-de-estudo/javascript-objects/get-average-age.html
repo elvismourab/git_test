@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get average age</title>
+</head>
+
+<body>
+    <script>
+        let john = { name: "John", age: 25 };
+        let pete = { name: "Pete", age: 30 };
+        let mary = { name: "Mary", age: 29 };
+
+        let arr = [john, pete, mary];
+
+        function getAverageAge(arr) {
+            // Using for loop:
+            let iterator = 0;
+            let sum = 0;
+            for (user of arr) {
+                sum += user.age
+                iterator++
+            }
+            return (sum / iterator);
+
+            // Using reduce:
+            //return arr.reduce((prev, user) => prev + user.age, 0) / arr.length;
+        }
+
+        alert(getAverageAge(arr)); // (25 + 30 + 29) / 3 = 28
+    </script>
+</body>
+
+</html>
