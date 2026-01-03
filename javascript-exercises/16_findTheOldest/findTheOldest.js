@@ -3,20 +3,15 @@ const findTheOldest = function (arr) {
     const actualYear = new Date().getFullYear();
 
     return arr.reduce((prev, current) => {
-        let currentAge = current.yearOfDeath ? (current.yearOfDeath - current.yearOfBirth) : (actualYear - current.yearOfBirth);
+        const prevAge = (prev.yearOfDeath ?? actualYear) - prev.yearOfBirth;
+        const currentAge = (current.yearOfDeath ?? actualYear) - current.yearOfBirth;
 
-        if (currentAge > prev.age) {
-            return {
-                name: current.name,
-                age: currentAge,
-            };
+        if (currentAge > prevAge) {
+            return current;
         }
 
         return prev;
 
-    }, {
-        name: "",
-        age: 0,
     })
 
 };
