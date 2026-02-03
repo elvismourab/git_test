@@ -10,6 +10,7 @@
 *   [Fundamentos de HTML](./material-de-estudo/fundamentos-html.md)
 *   [Métodos de Array: map, filter e reduce](./material-de-estudo/array-methods/)
 *   [Javascript Objects](./material-de-estudo/javascript-objects/)
+*   [HTML e CSS Intermediário](./material-de-estudo/html-css-intermediate/)
 *   [Fundamentos do React](./material-de-estudo/fundamentos-do-react.md)
 
 ### 🛠️ Ferramentas e Boas Práticas
