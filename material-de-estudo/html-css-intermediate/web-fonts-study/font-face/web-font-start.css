@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Windsong';
+    src: url('fonts/Windsong.woff2') format('woff2'),
+        url('fonts/Windsong.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Courier Prime';
+    src: url('fonts/CourierPrime.woff2') format('woff2'),
+        url('fonts/CourierPrime.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* General setup */
+
+html {
+    font-size: 10px;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h1, h2 {
+    font-family: 'Windsong';
+    line-height: 2;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    word-spacing: 0.6rem;
+    font-family: 'Courier Prime';
+}
