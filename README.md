@@ -4,47 +4,47 @@ Repositório organizado seguindo uma estrutura de PKM (Personal Knowledge Manage
 
 ---
 
-## 📖 Notas de Estudo (`src/notes`)
+## 📖 Notas de Estudo (`notes/`)
 
-Teoria e conceitos organizados por áreas de conhecimento.
+Teoria e conceitos organizados por áreas de conhecimento e progressão lógica.
 
 ### 💻 Desenvolvimento Web
-*   [Como a Web Funciona](./src/notes/01-web-development/como-a-web-funciona.md)
-*   [Fundamentos de HTML](./src/notes/01-web-development/fundamentos-html.md)
-*   [Fundamentos do React](./src/notes/01-web-development/fundamentos-do-react.md)
-*   [Flexbox e Grid](./src/notes/01-web-development/flexbox-grid.md)
-*   [Objetos e Arrays](./src/notes/01-web-development/objects-arrays.md)
+*   [01 - Como a Web Funciona](./notes/01-web-development/01-como-a-web-funciona.md)
+*   [02 - Fundamentos de HTML](./notes/01-web-development/02-fundamentos-html.md)
+*   [03 - Flexbox e Grid](./notes/01-web-development/03-flexbox-grid.md)
+*   [04 - Objetos e Arrays](./notes/01-web-development/04-objects-arrays.md)
+*   [05 - Fundamentos do React](./notes/01-web-development/05-fundamentos-do-react.md)
 
 ### 🧠 Arquitetura de Software
-*   [Clean Architecture: Conceitos Fundamentais](./src/notes/02-software-architecture/clean-architecture.md)
-*   [Clean Architecture: Exemplo em PHP](./src/notes/02-software-architecture/clean-architecture-php.md)
-*   [Fundamentos de Arquitetura Back-end](./src/notes/02-software-architecture/fundamentos-arquitetura-back-end.md)
+*   [01 - Fundamentos de Arquitetura Back-end](./notes/02-software-architecture/01-fundamentos-arquitetura-back-end.md)
+*   [02 - Clean Architecture: Conceitos Fundamentais](./notes/02-software-architecture/02-clean-architecture.md)
+*   [03 - Clean Architecture: Exemplo em PHP](./notes/02-software-architecture/03-clean-architecture-php.md)
 
 ### 🛠️ Ferramentas e Boas Práticas
-*   [Conventional Commits](./src/notes/03-tools-and-best-practices/conventional-commits.md)
-*   [Dominando o Terminal](./src/notes/03-tools-and-best-practices/dominando-o-terminal.md)
-*   [Ao Iniciar uma Tarefa](./src/notes/03-tools-and-best-practices/ao-iniciar-uma-tarefa.md)
-*   [Dicas Gerais](./src/notes/03-tools-and-best-practices/dicas.md)
+*   [01 - Dominando o Terminal](./notes/03-tools-and-best-practices/01-dominando-o-terminal.md)
+*   [02 - Conventional Commits](./notes/03-tools-and-best-practices/02-conventional-commits.md)
+*   [03 - Ao Iniciar uma Tarefa](./notes/03-tools-and-best-practices/03-ao-iniciar-uma-tarefa.md)
+*   [04 - Dicas Gerais](./notes/03-tools-and-best-practices/04-dicas.md)
 
 ### 🤖 Inteligência Artificial
-*   [Tópicos Fundamentais em IA](./src/notes/04-artificial-intelligence/topicos-fundamentais-em-inteligencia-artificial.md)
+*   [Tópicos Fundamentais em IA](./notes/04-artificial-intelligence/topicos-fundamentais-em-inteligencia-artificial.md)
 
 ### 🌱 Desenvolvimento Pessoal e Produtividade
-*   [Leis de Desenvolvimento Pessoal](./src/notes/05-personal-growth/leis-de-desenvolvimento-pessoal.md)
-*   [Slow Productivity (Turtle Pill)](./src/notes/05-personal-growth/slow-productivity-turtle-pill.md)
-*   [Notas de Livros](./src/notes/05-personal-growth/livros.md)
+*   [Leis de Desenvolvimento Pessoal](./notes/05-personal-growth/leis-de-desenvolvimento-pessoal.md)
+*   [Slow Productivity (Turtle Pill)](./notes/05-personal-growth/slow-productivity-turtle-pill.md)
+*   [Notas de Livros](./notes/05-personal-growth/livros.md)
 
 ---
 
-## 🧪 Lab (`src/lab`)
+## 🧪 Lab (`lab/`)
 
 Aplicação prática, exercícios e modelos de código.
 
 ### 🔱 The Odin Project (External)
-*   [CSS Exercises](./src/lab/odin-project/css-exercises)
-*   [JavaScript Exercises](./src/lab/odin-project/javascript-exercises)
+*   [CSS Exercises](./lab/odin-project/css-exercises)
+*   [JavaScript Exercises](./lab/odin-project/javascript-exercises)
 
 ### 👤 Projetos Pessoais
-*   [Métodos de Array](./src/lab/personal/array-methods)
-*   [HTML & CSS Intermediate](./src/lab/personal/html-css-intermediate)
-*   [Javascript Objects](./src/lab/personal/javascript-objects)
+*   [Métodos de Array](./lab/personal/array-methods)
+*   [HTML & CSS Intermediate](./lab/personal/html-css-intermediate)
+*   [Javascript Objects](./lab/personal/javascript-objects)
