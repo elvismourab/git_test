@@ -24,10 +24,11 @@ Teoria e conceitos organizados por áreas de conhecimento e progressão lógica.
 *   [01 - Dominando o Terminal](./notes/03-tools-and-best-practices/01-dominando-o-terminal.md)
 *   [02 - Conventional Commits](./notes/03-tools-and-best-practices/02-conventional-commits.md)
 *   [03 - Ao Iniciar uma Tarefa](./notes/03-tools-and-best-practices/03-ao-iniciar-uma-tarefa.md)
-*   [04 - Dicas Gerais](./notes/03-tools-and-best-practices/04-dicas.md)
+*   [04 - Boas Práticas Dev](./notes/03-tools-and-best-practices/04-boas-praticas-dev.md)
 
 ### 🤖 Inteligência Artificial
-*   [Tópicos Fundamentais em IA](./notes/04-artificial-intelligence/topicos-fundamentais-em-inteligencia-artificial.md)
+*   [01 - Tópicos Fundamentais em IA](./notes/04-artificial-intelligence/01-topicos-fundamentais-em-inteligencia-artificial.md)
+*   [02 - Guia de Uso: Gemini CLI](./notes/04-artificial-intelligence/02-guia-gemini-cli.md)
 
 ### 🌱 Desenvolvimento Pessoal e Produtividade
 *   [Leis de Desenvolvimento Pessoal](./notes/05-personal-growth/leis-de-desenvolvimento-pessoal.md)
@@ -40,7 +41,7 @@ Teoria e conceitos organizados por áreas de conhecimento e progressão lógica.
 
 Aplicação prática, exercícios e modelos de código.
 
-### 🔱 The Odin Project (External)
+### 🔱 The Odin Project
 *   [CSS Exercises](./lab/odin-project/css-exercises)
 *   [JavaScript Exercises](./lab/odin-project/javascript-exercises)
 
