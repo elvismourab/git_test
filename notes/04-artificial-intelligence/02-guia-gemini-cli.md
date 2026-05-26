@@ -37,6 +37,14 @@ Para extrair o melhor do agente, utilize a estrutura **Research -> Strategy -> E
 *   **Comandos Combinados**: O Gemini pode executar múltiplos comandos em paralelo. Você pode pedir, por exemplo: "Crie o componente X, atualize o teste Y e rode o linter".
 *   **Documentação Viva**: Peça ao agente para atualizar seus arquivos de notas à medida que você aprende algo novo no projeto.
 *   **Prevenção de Erros**: O agente sempre verifica o estado do git antes de grandes mudanças. Use isso a seu favor para manter o histórico limpo.
+* Ao digitar **/resume** no prompt:
+  * Navegador de Sessões: Abre uma interface interativa onde você pode usar as setas do teclado para navegar pelas sessões passadas.
+  * Busca: Pressione / dentro dessa lista para filtrar as sessões por conteúdo ou ID.
+  * Resumo: Pressione Enter na sessão desejada para carregá-la.
+* Comandos Úteis no Terminal:
+  * Listar sessões (sem entrar nelas): **gemini --list-sessions**
+  * Retomar a última sessão: **gemini --resume**
+  * Deletar uma sessão: **gemini --delete-session <id>** (ou pressione x dentro da lista do /resume).
 
 ---
 *Dica de Ouro: O Gemini CLI é um "programador parceiro". Quanto mais contexto você fornecer sobre suas intenções (o "porquê"), melhor será a qualidade das sugestões técnicas.*
