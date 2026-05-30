@@ -14,6 +14,8 @@ Teoria e conceitos organizados por áreas de conhecimento e progressão lógica.
 *   [03 - Flexbox e Grid](./notes/01-web-development/03-flexbox-grid.md)
 *   [04 - Objetos e Arrays](./notes/01-web-development/04-objects-arrays.md)
 *   [05 - Fundamentos do React](./notes/01-web-development/05-fundamentos-do-react.md)
+*   [06 - Fundamentos do Laravel e Estratégias de Migração](./notes/01-web-development/06-fundamentos-laravel.md)
+*   [07 - Fundamentos do Ruby on Rails](./notes/01-web-development/07-fundamentos-ruby-on-rails.md)
 
 ### 🧠 Arquitetura de Software
 *   [01 - Fundamentos de Arquitetura Back-end](./notes/02-software-architecture/01-fundamentos-arquitetura-back-end.md)
@@ -29,6 +31,8 @@ Teoria e conceitos organizados por áreas de conhecimento e progressão lógica.
 ### 🤖 Inteligência Artificial
 *   [01 - Tópicos Fundamentais em IA](./notes/04-artificial-intelligence/01-topicos-fundamentais-em-inteligencia-artificial.md)
 *   [02 - Guia de Uso: Gemini CLI](./notes/04-artificial-intelligence/02-guia-gemini-cli.md)
+*   [03 - Programação Eficaz com IA](./notes/04-artificial-intelligence/03-programacao-eficaz-com-ia.md)
+*   [04 - Uso Responsável e Autonomia Técnica](./notes/04-artificial-intelligence/04-uso-responsavel-de-ia.md)
 
 ### 🌱 Desenvolvimento Pessoal e Produtividade
 *   [Leis de Desenvolvimento Pessoal](./notes/05-personal-growth/leis-de-desenvolvimento-pessoal.md)
