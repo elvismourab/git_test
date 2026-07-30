@@ -53,3 +53,4 @@ Aplicação prática, exercícios e modelos de código.
 *   [Métodos de Array](./lab/personal/array-methods)
 *   [HTML & CSS Intermediate](./lab/personal/html-css-intermediate)
 *   [Javascript Objects](./lab/personal/javascript-objects)
+*   [Closures](./lab/personal/closures/)
